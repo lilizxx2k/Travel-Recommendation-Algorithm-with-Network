@@ -3,7 +3,7 @@ This project implements a simple travel recommendation system using data collect
 
 1. Data Preparation
 First I input the data as a CSV file. Here each row corresponds to a student and the four cities they listed. I added a new row to include my own favorite cities and later see my travel recommendations.
-2. Graph Construction using NetworkX)
+2. Graph Construction using NetworkX
 I created a bipartite graph where the first set of nodes is the student and the other is the cities. The edges of the graph connect a student to the cities they listed as favorites. This representation makes it easy to find relationships between students and cities.
 3. Recommendation Function
 The function first identifies the cities enjoyed by the target student. Next it finds all other students who liked at least one of those same cities. Next, the function finds all the other cities enjoyed by those students. After removing duplicates these cities are returned as the recommendations.
